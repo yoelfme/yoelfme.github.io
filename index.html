@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
 <body>
 	<header>
@@ -21,16 +22,15 @@
 			</figure>
 			<span>Yoel Monzon</span>
 		</h1>
-		<!-- Menu Navegacion -->
 		<nav>
 			<ul>
-				<li><a href="#/acerca">Sobre mi</a></li>
-				<li><a href="#/portafolio">Portafolio</a></li>
-				<li><a href="#/contacto">Contacto</a></li>
+				<li><a href="#aboutme">Sobre mi</a></li>
+				<li><a href="#portfolio">Portafolio</a></li>
+				<li><a href="#contact">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section class="welcome">
+	<section class="welcome" id="aboutme">
 		<hgroup>
 			<h3>
 				<strong>Hola, Soy Yoel</strong>
@@ -42,7 +42,7 @@
 			Soy emprendedor, aunque actualmente estoy de Freelancer, estos son algunos de mis conocimientos.
 		</p>
 	</section>
-	<section class="skills color2">
+	<section class="skills color2" >
 		<ul >
 			<li class="wow slideInLeft categories" data-wow-duration="1s">
 				Fronted
@@ -124,7 +124,7 @@
 			"La disciplina tarde o temprano, vencerá a la inteligencia."
 		</p>
 	</section>
-	<section class="jobs color2 ">
+	<section class="jobs color2 " id="portfolio">
 		<p class="text-medium text-center">Y esto es algo de lo que he hecho</p>
 		<ul>
 			<li class="project wow slideInLeft">
@@ -144,7 +144,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="contact text-left">
+	<section class="contact text-center" id="contact">
 		<p class="text-medium wow slideInLeft">
 			Contactame
 		</p>
@@ -157,8 +157,8 @@
 				<button>Enviar Mensaje</button>
 			</form>
 		</article>
-		<article class="data">
-			Mapa
+		<article id="map">
+
 		</article>
 	</section>
 	<footer class="text-center">
@@ -179,6 +179,8 @@
 		<p>Desarrollado por: Yoel Monzón</p>
 	</footer>
 	<script src="js/wow.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="js/map.js"></script>
 	<script>
 		var wow = new WOW(
 					{

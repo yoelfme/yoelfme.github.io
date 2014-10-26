@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Yoel Monzon</title>
+
+	<!-- Relacionar archivos CSS Cascade Style Sheet-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<h1>Yoel Monzon</h1>
-	<p>This is my portfolia</p>
+	<header>
+		<h1 class="title">
+			<figure>
+				<a href="index.html">
+					<img src="img/yoelfme.png" alt="">
+				</a>
+			</figure>
+			<span>Yoel Monzon</span>
+		</h1>
+		<!-- Menu Navegacion -->
+		<nav>
+			<ul>
+				<li><a href="#/acerca">Sobre mi</a></li>
+				<li><a href="#/portafolio">Portafolio</a></li>
+				<li><a href="#/contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="welcome">
+		<hgroup>
+			<h3>
+				<strong>Hola, Soy Yoel</strong>
+			</h3>
+		</hgroup>
+		<p>
+			Tengo 19 años, soy de Guatemala, me denomino Desarrollador Web Backend y Fronted (aunque me dedico más al Backend), tambien soy estudiante de Ingeniería en Sistemas.
+		<p>
+			Soy emprendedor, aunque actualmente estoy de Freelancer, estos son algunos de mis conocimientos.
+		</p>
+	</section>
+	<section class="skills color2">
+		<ul >
+			<li class="wow slideInLeft categories" data-wow-duration="1s">
+				Fronted
+				<ul>
+					<li>
+						<div class="barra-90"></div>
+						<span>HTML5 + CSS3</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>Stylus</span>
+					</li>
+					<li>
+						<div class="barra-50"></div>
+						<span>JavaScript</span>
+					</li>
+					<li>
+						<div class="barra-60"></div>
+						<span>jQuery</span>
+					</li>
+				</ul>
+			</li>
+			<li class="wow bounceInDown categories" data-wow-duration="1s">
+				Backend &amp; Desktop
+				<ul>
+					<li>
+						<div class="barra-50"></div>
+						<span>PHP + Laravel</span>
+					</li>
+					<li>
+						<div class="barra-30"></div>
+						<span>Node.js + Express</span>
+					</li>
+					<li>
+						<div class="barra-40"></div>
+						<span>VB.NET &amp; C#.NET</span>
+					</li>
+					<li>
+						<div class="barra-30"></div>
+						<span>Java</span>
+					</li>
+				</ul>
+			</li>
+			<li class="wow slideInRight categories" data-wow-duration="1s">
+				Algo más...
+				<ul>
+					<li>
+						<div class="barra-60"></div>
+						<span>HTML+CSS+JS+Phonegap</span>
+					</li>
+					<li>
+						<div class="barra-60"></div>
+						<span>MySQL</span>
+					</li>
+					<li>
+						<div class="barra-80"></div>
+						<span>SQL Server</span>
+					</li>
+					<li>
+						<div class="barra-20"></div>
+						<span>MongoDB</span>
+					</li>
+					<li>
+						<div class="barra-70"></div>
+						<span>Digital Ocean &amp; Heroku</span>
+					</li>
+					<li>
+						<div class="barra-40"></div>
+						<span>UML con RUP</span>
+					</li>
+				</ul>
+			</li>
+			<li style="display:none;" class="wow" >
+			</li>
+		</ul>
+	</section>
+	<section class="phrase">
+		<p class="wow fadeInDown text-big text-center">
+			"Tarde o temprano, la disciplina vencerá a la inteligencia."
+		</p>
+	</section>
+	<section class="jobs color2 ">
+		<p class="text-medium text-center">Y esto es algo de lo que he hecho</p>
+		<ul>
+			<li class="project wow slideInLeft">
+				<figure><img src="img/project.png" alt=""></figure>
+				<figcaption>Proyecto 1</figcaption>
+				<span>HTML + CSS</span>
+			</li>
+			<li class="project wow slideInLeft">
+				<figure><img src="img/project.png" alt=""></figure>
+				<figcaption>Proyecto 2</figcaption>
+				<span>PHP + Laravel</span>
+			</li>
+			<li class="project wow slideInRight">
+				<figure><img src="img/project.png" alt=""></figure>
+				<figcaption>Proyecto 3</figcaption>
+				<span>Node.js</span>
+			</li>
+			<li class="project wow slideInRight">
+				<figure><img src="img/project.png" alt=""></figure>
+				<figcaption>Proyecto 4</figcaption>
+				<span>PSD to HTML</span>
+			</li>
+		</ul>
+	</section>
+	<section class="contact text-left">
+		<p class="text-medium wow slideInLeft">
+			Contactame
+		</p>
+		<article class="data wow slideInLeft">
+			<form action="">
+				<input type="text" class="field" placeholder="Tu Nombre">
+				<input type="text" class="field" placeholder="Tu Email">
+				<input type="text" class="field" placeholder="Asunto">
+				<textarea name="" id="" cols="30" rows="3" placeholder="Tu Mensaje"></textarea>
+				<button>Enviar Mensaje</button>
+			</form>
+		</article>
+		<article class="map">
+			
+		</article>
+	</section>
+	<footer class="text-center">
+		<p class="icons text-center">
+			<a href="https://github.com/yoelfme">
+				<i class="fa fa-github"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://www.twitter.com/yoelfme">
+				<i class="fa fa-skype"></i>
+			</a>
+			<a href="https://www.linkedin.com/profile/view?id=249723992&trk=nav_responsive_tab_profile_pic">
+				<i class="fa fa-linkedin"></i>
+			</a>
+		</p>
+		<p>Desarrollado por: Yoel Monzón</p>
+	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW(
+					{
+						boxClass:     'wow',      // animated element css class (default is wow)
+				    	animateClass: 'animated', // animation css class (default is animated)
+				    	offset:       0,          // distance to the element when triggering the animation (default is 0)
+				    	mobile:       true,       // trigger animations on mobile devices (default is true)
+				    	live:         true        // act on asynchronously loaded content (default is true)
+				  	}
+				);
+		wow.init();
+	</script>
 </body>
 </html>

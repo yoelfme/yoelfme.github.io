@@ -15,14 +15,21 @@ var exports = {};
         //document.getElementById('contact').click();
     };
 
-    this.goTo = function (element, to, duration){
+    this.goTo = function (element, to, duration,last_difference){
       if (duration < 0) return;
-      var difference = to - element.scrollTop;
+
+      last_difference = typeof last_difference !== 'undefined' ? last_difference : -1;
+
+      to = document.getElementById(to);
+      var difference = to.offsetTop - element.scrollTop;
       var perTick = difference / duration * 10;
+      
+      if (last_difference === difference ) return;
+
       setTimeout(function() {
           element.scrollTop = element.scrollTop + perTick;
-          if (element.scrollTop === to) return;
-          exports.goTo(element, to, duration - 10);
+          if (element.scrollTop === to.offsetTop) return;
+          exports.goTo(element, to.id, duration - 10,difference);
       }, 10);
 
       return false;

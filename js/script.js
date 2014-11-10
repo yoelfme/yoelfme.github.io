@@ -13,7 +13,7 @@ var exports = {};
             id: 'examples.map-i875mjb7'
           }).addTo(map);
     };
-    
+
     this.goTo = function (element, to, duration,last_difference){
       if (duration < 0) return;
       last_difference = typeof last_difference !== 'undefined' ? last_difference : -1;

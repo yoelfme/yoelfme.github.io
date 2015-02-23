@@ -1,0 +1,22 @@
+{
+  "name": "yoelfme.github.io",
+  "version": "1.0",
+  "homepage": "http://gith.",
+  "description": "Page of portfolio",
+  "main": "index.html",
+  "authors": [
+    "Yoel Monzon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "materialize": "~0.95.2"
+  }
+}

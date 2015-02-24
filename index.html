@@ -14,28 +14,25 @@
 </head>
 <body>
 	<header class="row">
-		<h1 class="col s5 offset-s1" class="title">
-			<figure>
-				<a href="index.html">
-					<img src="img/yoelfme.png" alt="">
-				</a>
-			</figure>
-			<span>Yoel Monzon</span>
-		</h1>
-		<nav class="col s6">	
+		<div class="row">
+			<img src="img/yoelfme.png" alt="">
+		</div>	
+		<div class="col s12 text-center">	
 			<ul>
-				<li onclick="exports.goTo(document.body,'aboutme',500)"><a id="" href="#">Sobre mi</a></li>
-				<li onclick="exports.goTo(document.body,'portfolio',500)"><a href="#">Portafolio</a></li>
-				<li onclick="exports.goTo(document.body,'contact',500)"><a href="#">Contacto</a></li>
+				<li style="margin: 10px;" class="waves-effect waves-light btn cyan darken-1" onclick="exports.goTo(document.body,'aboutme',500)">
+					<a class="white-text">Sobre mi</a>
+				</li>
+				<li style="margin: 10px;" class="waves-effect waves-light btn  cyan darken-1" onclick="exports.goTo(document.body,'portfolio',500)">
+					<a class="white-text">Portafolio</a>
+				</li>
+				<li style="margin: 10px;" class="waves-effect waves-light btn  cyan darken-1" onclick="exports.goTo(document.body,'contact',500)">
+					<a class="white-text">Contacto</a>
+				</li>
 			</ul>
-		</nav>
+		</div>
 	</header>
-	<section class="welcome" id="aboutme">
-		<hgroup>
-			<h3>
-				<strong>Hola, Soy Yoel</strong>
-			</h3>
-		</hgroup>
+	<section class="card-panel light-blue lighten-3" id="aboutme">
+		<h4>Hola, Soy Yoel</h4>
 		<p>
 			Tengo 19 años, soy de Guatemala, me denomino Desarrollador Web Backend y Fronted (aunque me dedico más al Backend), tambien soy estudiante de Ingeniería en Sistemas.
 		<p>
@@ -44,23 +41,23 @@
 	</section>
 	<section class="skills color2" >
 		<ul >
-			<li class="wow slideInLeft categories" data-wow-duration="1s">
+			<li class=" categories" data-wow-duration="1s">
 				Fronted
 				<ul>
 					<li>
-						<div class="barra-90"></div>
+						<div class="barra-90 cyan darken-1"></div>
 						<span>HTML5 + CSS3</span>
 					</li>
 					<li>
-						<div class="barra-80"></div>
+						<div class="barra-80 cyan darken-1"></div>
 						<span>Stylus</span>
 					</li>
 					<li>
-						<div class="barra-50"></div>
+						<div class="barra-50 cyan darken-1"></div>
 						<span>JavaScript</span>
 					</li>
 					<li>
-						<div class="barra-60"></div>
+						<div class="barra-60 cyan darken-1"></div>
 						<span>jQuery</span>
 					</li>
 				</ul>
@@ -69,48 +66,48 @@
 				Backend &amp; Desktop
 				<ul>
 					<li>
-						<div class="barra-50"></div>
+						<div class="barra-50 cyan darken-1"></div>
 						<span>PHP + Laravel</span>
 					</li>
 					<li>
-						<div class="barra-30"></div>
+						<div class="barra-30 cyan darken-1"></div>
 						<span>Node.js + Express</span>
 					</li>
 					<li>
-						<div class="barra-40"></div>
+						<div class="barra-40 cyan darken-1"></div>
 						<span>VB.NET &amp; C#.NET</span>
 					</li>
 					<li>
-						<div class="barra-30"></div>
+						<div class="barra-30 cyan darken-1"></div>
 						<span>Java</span>
 					</li>
 				</ul>
 			</li>
-			<li class="wow slideInRight categories" data-wow-duration="1s">
+			<li class=" categories" data-wow-duration="1s">
 				Algo más...
 				<ul>
 					<li>
-						<div class="barra-60"></div>
+						<div class="barra-60 cyan darken-1"></div>
 						<span>HTML+CSS+JS+Phonegap</span>
 					</li>
 					<li>
-						<div class="barra-60"></div>
+						<div class="barra-60 cyan darken-1"></div>
 						<span>MySQL</span>
 					</li>
 					<li>
-						<div class="barra-80"></div>
+						<div class="barra-70 cyan darken-1"></div>
 						<span>SQL Server</span>
 					</li>
 					<li>
-						<div class="barra-20"></div>
+						<div class="barra-30 cyan darken-1"></div>
 						<span>MongoDB</span>
 					</li>
 					<li>
-						<div class="barra-43"></div>
+						<div class="barra-43 cyan darken-1"></div>
 						<span>Digital Ocean &amp; Heroku</span>
 					</li>
 					<li>
-						<div class="barra-40"></div>
+						<div class="barra-40 cyan darken-1"></div>
 						<span>UML con RUP</span>
 					</li>
 				</ul>
@@ -119,7 +116,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="phrase">
+	<section class="card-panel light-blue lighten-3 phrase">
 		<p class="wow fadeInDown text-big text-center">
 			"La disciplina tarde o temprano, vencerá a la inteligencia."
 		</p>
@@ -127,61 +124,73 @@
 	<section class="jobs color2 " id="portfolio">
 		<p class="text-medium text-center">Y esto es algo de lo que he hecho</p>
 		<ul>
-			<li class="project wow slideInLeft">
+			<li class="project ">
 				<figure><img src="img/project.png" alt=""></figure>
 				<figcaption>Proyecto 1</figcaption>
 				<span>Backend y Frontend</span>
 			</li>
-			<li class="project wow slideInLeft">
+			<li class="project ">
 				<figure><img src="img/project.png" alt=""></figure>
 				<figcaption>Proyecto 2</figcaption>
 				<span>Backend y Fronted</span>
 			</li>
-			<li class="project wow slideInRight">
+			<li class="project ">
 				<figure><img src="img/project.png" alt=""></figure>
 				<figcaption>Proyecto 3</figcaption>
 				<span>Backend y Frontend</span>
 			</li>
-			<li class="project wow slideInRight">
+			<li class="project ">
 				<figure><img src="img/project.png" alt=""></figure>
 				<figcaption>Proyecto 4</figcaption>
 				<span>Backend y Frontend</span>
 			</li>
 		</ul>
 	</section>
-	<section class="contact text-center" id="contact">
-		<p class="text-medium wow slideInLeft">
+	<section class="card-panel light-blue lighten-3	 contact text-center" id="contact">
+		<p class="text-medium ">
 			Contactame
 		</p>
-		<article class="data wow slideInLeft">
+		<article class="data ">
 			<form action="104.131.140.86/me/save.php" method="POST">
-				<input type="text" class="field" name="name" placeholder="Tu Nombre" >
-				<input type="text" class="field" name="email" placeholder="Tu Email">
-				<input type="text" class="field" name="asunto" placeholder="Asunto">
-				<textarea name="message" id="" cols="30" rows="3" placeholder="Tu Mensaje"></textarea>
-				<button>Enviar Mensaje</button>
+				<div class="input-field col s6">
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+				<div class="input-field col s6">
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+			<div class="input-field col s6">
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+				<div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Textarea</label>
+      </div>
+				<button class="btn">Enviar Mensaje</button>
 			</form>
 		</article>
-		<article id="map" class="wow slideInRight">
+		<article id="map" class="">
 
 		</article>
 	</section>
-	<footer class="text-center">
+	<footer class=" text-center">
 		<p class="icons text-center">
-			<a href="https://github.com/yoelfme" target="_blank">
+			<a class="btn-floating btn-large waves-effect waves-light cyan darken-1" href="https://github.com/yoelfme" target="_blank">
 				<i class="fa fa-github"></i>
 			</a>
-			<a href="https://www.twitter.com/yoelfme">
+			<a class="btn-floating btn-large waves-effect waves-light cyan darken-1"  href="https://www.twitter.com/yoelfme">
 				<i class="fa fa-twitter"></i>
 			</a>
-			<a href="#">
+			<a class="btn-floating btn-large waves-effect waves-light cyan darken-1"  href="#">
 				<i class="fa fa-skype"></i>
 			</a>
-			<a href="https://www.linkedin.com/profile/view?id=249723992&trk=nav_responsive_tab_profile_pic">
+			<a class="btn-floating btn-large waves-effect waves-light cyan darken-1"  href="https://www.linkedin.com/profile/view?id=249723992&trk=nav_responsive_tab_profile_pic">
 				<i class="fa fa-linkedin"></i>
 			</a>
 		</p>
-		<p>Desarrollado por: Yoel Monzón</p>
+		<p class="cyan-text">Desarrollado por: Yoel Monzón</p>
 	</footer>
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>

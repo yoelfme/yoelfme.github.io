@@ -8,13 +8,13 @@
 	<!-- Relacionar archivos CSS Cascade Style Sheet-->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
 <body>
-	<header>
-		<h1 class="title">
+	<header class="row">
+		<h1 class="col s5 offset-s1" class="title">
 			<figure>
 				<a href="index.html">
 					<img src="img/yoelfme.png" alt="">
@@ -22,7 +22,7 @@
 			</figure>
 			<span>Yoel Monzon</span>
 		</h1>
-		<nav>
+		<nav class="col s6">	
 			<ul>
 				<li onclick="exports.goTo(document.body,'aboutme',500)"><a id="" href="#">Sobre mi</a></li>
 				<li onclick="exports.goTo(document.body,'portfolio',500)"><a href="#">Portafolio</a></li>
@@ -183,19 +183,9 @@
 		</p>
 		<p>Desarrollado por: Yoel Monzón</p>
 	</footer>
-	<script src="js/wow.min.js"></script>
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		(new WOW(
-					{
-						boxClass:     'wow',      // animated element css class (default is wow)
-							animateClass: 'animated', // animation css class (default is animated)
-							offset:       0,          // distance to the element when triggering the animation (default is 0)
-							mobile:       true,       // trigger animations on mobile devices (default is true)
-							live:         true        // act on asynchronously loaded content (default is true)
-						}
-		)).init();
-	</script>
 </body>
 </html>
